@@ -32,7 +32,7 @@ public class AnuncioTest {
 	@BeforeEach
 	public void setup() {
 		ChromeOptions options = new ChromeOptions();
-		
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 	}
 	
